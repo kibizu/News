@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">The Guardian News</string>
+    <string name="no_data">Ooops!!! No data found!</string>
+    <string name="no_connection">Ooops!!! No Internet Connection!</string>
+    <!--Strings of settings-->
+    <string name="settings_menu_item" translatable="false">Settings</string>
+    <string name="settings_title" translatable="false">News Settings</string>
+
+    <string name="settings_search_label">Search with keyword</string>
+    <string name="settings_search_key" translatable="false">q</string>
+
+    <string name="settings_order_by_label">Order By</string>
+    <string name="settings_order_by_key" translatable="false">order-by</string>
+    <string name="settings_order_by_default" translatable="false">newest</string>
+    
+    <string name="settings_order_by_newest_label">Newest</string>
+    <string name="settings_order_by_newest_value" translatable="false">newest</string>
+
+    <string name="settings_order_by_oldest_label">Oldest</string>
+    <string name="settings_order_by_oldest_value" translatable="false">oldest</string>
+
+    <string name="settings_order_by_relevance_label">Relevance</string>
+    <string name="settings_order_by_relevance_value" translatable="false">relevance</string>
+
+    <string name="settings_page_size_label">Results per page</string>
+    <string name="settings_page_size_key" translatable="false">page-size</string>
+    <string name="settings_page_size_default" translatable="false">50</string>
+
+    <string name="settings_page_size_10" translatable="false">10</string>
+    <string name="settings_page_size_20" translatable="false">20</string>
+    <string name="settings_page_size_30" translatable="false">30</string>
+    <string name="settings_page_size_50" translatable="false">50</string>
+    <string name="settings_page_size_100" translatable="false">100</string>
+
+
+    <string name="settings_select_section_label">Section select</string>
+    <string name="settings_select_section_key" translatable="false">section</string>
+
+    <string name="settings_select_section_news_label">News</string>
+    <string name="settings_select_section_news_value" translatable="false">news</string>
+    
+    <string name="settings_select_section_opinion_label">Opinion</string>
+    <string name="settings_select_section_opinion_value" translatable="false">commentisfree</string>
+
+    <string name="settings_select_section_sport_label">Sport</string>
+    <string name="settings_select_section_sport_value" translatable="false">sport</string>
+
+    <string name="settings_select_section_culture_label">Culture</string>
+    <string name="settings_select_section_culture_value" translatable="false">culture</string>
+
+    <string name="settings_select_section_lifestyle_label">Lifestyle</string>
+    <string name="settings_select_section_lifestyle_value" translatable="false">lifeandstyle</string>
+
+    <string name="settings_select_section_none_label">None</string>
+    <string name="settings_select_section_none_value"></string>
+
+</resources>

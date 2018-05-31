@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimension5">5dp</dimen>
+    <dimen name="dimension10">10dp</dimen>
+    <dimen name="dimension20">20dp</dimen>
+    <dimen name="dimension58">58dp</dimen>
+    <dimen name="dimension100">100dp</dimen>
+    <dimen name="dimension150">150dp</dimen>
+    <dimen name="fontsize10">10sp</dimen>
+    <dimen name="fontsize12">12sp</dimen>
+    <dimen name="fontsize14">14sp</dimen>
+    <dimen name="cardview_width">165dp</dimen>
+    <dimen name="cardview_height">312dp</dimen>
+</resources>
