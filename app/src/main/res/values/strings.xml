@@ -2,6 +2,7 @@
     <string name="app_name">The Guardian News</string>
     <string name="no_data">Ooops!!! No data found!</string>
     <string name="no_connection">Ooops!!! No Internet Connection!</string>
+    <string name="api_key">380ce7e8-8ba4-4738-b7b4-b04bf27a30a7</string>
     <!--Strings of settings-->
     <string name="settings_menu_item" translatable="false">Settings</string>
     <string name="settings_title" translatable="false">News Settings</string>

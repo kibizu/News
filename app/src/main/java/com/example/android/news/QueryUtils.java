@@ -180,7 +180,6 @@ public final class QueryUtils {
                 String webUrl = currentNew.getString("webUrl");
                 String thumbnailUrl;
 
-
                 try {
 
                     thumbnailUrl = fields.getString("thumbnail");
@@ -218,6 +217,45 @@ public final class QueryUtils {
         }
 
         return news;
+    }
+
+    private static Bitmap downloadImage(String url) throws IOException {
+
+        Bitmap image = null;
+
+        try {
+            URL imageUrl = new URL(url);
+            urlConnection = (HttpURLConnection) imageUrl.openConnection();
+            urlConnection.setReadTimeout(READ_TIMEOUT /* milliseconds */);
+            urlConnection.setConnectTimeout(CONNECT_TIMEOUT /* milliseconds */);
+            urlConnection.setRequestMethod("GET");
+            urlConnection.connect();
+
+            // If the request was successful (response code 200),
+            // then read the input stream and parse the response.
+            if (urlConnection.getResponseCode() == 200) {
+                inputStream = urlConnection.getInputStream();
+                image = BitmapFactory.decodeStream(inputStream);
+
+            } else {
+                Log.e(LOG_TAG, "Download thumbnail error: " + urlConnection.getResponseCode());
+            }
+        } catch (IOException e) {
+            Log.e(LOG_TAG, "Problem downloading thumbnail.", e);
+        } finally {
+
+            if (urlConnection != null) {
+                urlConnection.disconnect();
+            }
+            if (inputStream != null) {
+                // Closing the input stream could throw an IOException, which is why
+                // the makeHttpRequest(URL url) method signature specifies than an IOException
+                // could be thrown.
+                inputStream.close();
+            }
+
+            return image;
+        }
     }
 
 }

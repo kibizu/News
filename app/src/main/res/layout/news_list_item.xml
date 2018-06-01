@@ -36,7 +36,8 @@
             android:layout_width="@dimen/cardview_width"
             android:layout_height="wrap_content"
             android:layout_gravity="top"
-            android:src="@drawable/no_image"/>
+            android:src="@drawable/no_image"
+            android:contentDescription="The thumnail, if it is present, of the article"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -64,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="right"
-                android:textSize="@dimen/dimension10"
+                android:textSize="@dimen/fontsize10"
                 android:paddingRight="@dimen/dimension5"
                 tools:text="Section name"
                 android:lines="2"

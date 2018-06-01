@@ -200,6 +200,7 @@ public class NewsActivity extends AppCompatActivity implements LoaderCallbacks<L
 
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
+        uriBuilder.appendQueryParameter("api-key", getString(R.string.api_key));
         uriBuilder.appendQueryParameter("show-tags","contributor");
         uriBuilder.appendQueryParameter("show-fields", "trailText,thumbnail");
         uriBuilder.appendQueryParameter("page-size","10");
@@ -215,7 +216,7 @@ public class NewsActivity extends AppCompatActivity implements LoaderCallbacks<L
             uriBuilder.appendQueryParameter(getString(R.string.settings_select_section_key), selectSection);
 
         }
-
+        
         // Create a new loader for the given URL
         return new NewsLoader(this, uriBuilder.toString());
 
