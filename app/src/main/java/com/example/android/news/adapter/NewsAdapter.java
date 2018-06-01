@@ -115,12 +115,8 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyViewHolder> 
 
         String currentThumbnailUrl = currentNew.getmThumbnailUrl();
 
-        if (currentThumbnailUrl!=null) {
-
-            //Picasso library to download the thumbnail
-            Picasso.get().load(currentThumbnailUrl).into(holder.thumbnailView);
-
-        }
+        //Picasso library to download the thumbnail
+        Picasso.get().load(currentThumbnailUrl).placeholder(R.drawable.no_image).error(R.drawable.no_image).into(holder.thumbnailView);
 
         String date = currentNew.getmWebPubblicationDate();
 
