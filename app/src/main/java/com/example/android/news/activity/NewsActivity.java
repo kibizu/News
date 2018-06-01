@@ -216,7 +216,7 @@ public class NewsActivity extends AppCompatActivity implements LoaderCallbacks<L
             uriBuilder.appendQueryParameter(getString(R.string.settings_select_section_key), selectSection);
 
         }
-        
+
         // Create a new loader for the given URL
         return new NewsLoader(this, uriBuilder.toString());
 
