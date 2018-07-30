@@ -28,6 +28,7 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.example.android.news.BuildConfig;
 import com.example.android.news.entity.New;
 import com.example.android.news.adapter.NewsAdapter;
 import com.example.android.news.loader.NewsLoader;
@@ -200,7 +201,7 @@ public class NewsActivity extends AppCompatActivity implements LoaderCallbacks<L
 
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
-        uriBuilder.appendQueryParameter("api-key", getString(R.string.api_key));
+        uriBuilder.appendQueryParameter("api-key", BuildConfig.ApiKey);
         uriBuilder.appendQueryParameter("show-tags","contributor");
         uriBuilder.appendQueryParameter("show-fields", "trailText,thumbnail");
         uriBuilder.appendQueryParameter("page-size","10");
